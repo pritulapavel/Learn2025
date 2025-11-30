@@ -248,7 +248,7 @@ body {
     order: 1;
     flex-grow: 0;
 }
-.left_info_descr a {color: #292929;text-decoration: none;}
+.left_info_descr a {color: #fff;text-decoration: none;}
 
 .left_content:last-child .left_title {
     border-bottom: none;

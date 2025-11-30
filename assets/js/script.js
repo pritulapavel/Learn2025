@@ -2,8 +2,8 @@
     'use strict';
     function applyTheme(theme) {
         const themes = {
-            light: { css: '../css/style-white.css', logo: '../img/logo_dark.svg' },
-            dark: { css: '../css/style.css', logo: '../img/logo.svg' }
+            light: { css: '/assets/css/style-white.css', logo: '/assets/img/logo_dark.svg' },
+            dark: { css: '/assets/css/style.css', logo: '/assets/img/logo.svg' }
         };
         const themeLink = document.getElementById('theme-style');
         const logoLink = document.getElementById('logotype');

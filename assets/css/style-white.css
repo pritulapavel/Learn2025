@@ -570,6 +570,30 @@ body {
     height: 30px;
 }
 
+.work_content:hover .work_block_title,
+.work_content:hover .work_year,
+.education_content:hover .education_content_year,
+.education_content:hover .education_block_title,
+.education_content:hover .education_year,
+.work_content:hover .work_block_description {
+    color: red;
+    cursor: default;
+}
+.work_content:hover .timeline-dot_work {
+    background: red;
+    cursor: default;
+}
+.education_content:hover .timeline-dot_education {
+    background: red;
+    cursor: default;
+}
+.timeline-dot_work:hover::after {
+    background: #fa709a;
+}
+.timeline-dot_education:hover::after {
+    background: #fa709a;
+}
+
 .timeline-dot_education {
     position: relative;
     width: 12px;

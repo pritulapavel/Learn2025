@@ -738,14 +738,17 @@ body {
     .main,
     .general,
     .content,
-    .left_wrapper, .left_title,
+    .left_wrapper, 
+    .left_title,
     .left_info, {
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
     }
-    .left_info_descr, .progress, .left_content {
+    .left_info_descr,
+    .progress,
+    .left_content {
         width:100%;
     }
     .general {

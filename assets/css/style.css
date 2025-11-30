@@ -734,10 +734,7 @@ body {
         padding: 10px 20px;
     }
 }
-/* Мобильные и планшеты (до 992px) */
 @media (max-width: 992px) {
-
-    /* Главное — все блоки становятся вертикальными */
     .main,
     .general,
     .profile_wrapper,
@@ -748,35 +745,25 @@ body {
         max-width: 100% !important;
         height: auto !important;
     }
-
-    /* Убираем flex у general */
     .general {
         flex-direction: column !important;
         align-items: center !important;
     }
-
-    /* Левая колонка идёт первой */
     .left_wrapper {
         order: 0;
         border-right: none;
         border-bottom: 1px solid #f4effe;
         padding-bottom: 20px;
     }
-
-    /* Контент под левым блоком */
     .content {
         order: 1;
         margin-top: 20px;
         background-position: center bottom;
     }
-
-    /* Блоки профиля, работы, образования — ниже */
     .profile_wrapper {
         order: unset;
         margin-top: 10px;
     }
-
-    /* Общие улучшения для мобильного вида */
     .title,
     .banner {
         flex-direction: column;

@@ -737,13 +737,16 @@ body {
 @media (max-width: 992px) {
     .main,
     .general,
-    .profile_wrapper,
     .content,
-    .left_wrapper {
+    .left_wrapper, .left_title,
+    .left_info, {
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
+    }
+    .left_info_descr, .progress {
+        width:100%;
     }
     .general {
         flex-direction: column !important;

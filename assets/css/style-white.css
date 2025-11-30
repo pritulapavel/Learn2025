@@ -650,6 +650,7 @@ body {
 
 .progress:hover .progress-fill {
     background: linear-gradient(90deg, #FA709A, #FEE140);
+    transition: 0.5s ease, transform 0.3s ease;
 }
 
 .theme-btn {

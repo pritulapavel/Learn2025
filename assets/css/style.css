@@ -745,7 +745,7 @@ body {
         max-width: 100% !important;
         height: auto !important;
     }
-    .left_info_descr, .progress {
+    .left_info_descr, .progress, .left_content {
         width:100%;
     }
     .general {

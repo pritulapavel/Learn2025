@@ -793,4 +793,7 @@ body {
         width:140px;
         text-align: left;
     }
+    .profile_statistics {
+        gap: 16px;
+    }
 }

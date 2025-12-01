@@ -781,7 +781,8 @@ body {
         gap: 15px;
         width:auto;
     }
-    .education_year::before {
+    .education_year::before,
+    .work_year::before {
         left: -1px;
     }
 }

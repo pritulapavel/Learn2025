@@ -32,7 +32,7 @@
         const button = document.getElementById('switch-theme');
         if (button) {
             button.addEventListener('click', () => {
-                currentTheme = currentTheme === 'light' ? 'dark' : 'dark';
+                currentTheme = currentTheme === 'light' ? 'dark' : 'light';
                 applyTheme(currentTheme);
             });
         }

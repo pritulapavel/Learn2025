@@ -781,4 +781,7 @@ body {
         gap: 15px;
         width:auto;
     }
+    .education_year::before {
+        left: -1px;
+    }
 }

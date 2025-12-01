@@ -738,17 +738,25 @@ body {
 @media (max-width: 992px) {
     .main,
     .general,
-    .profile_wrapper,
     .content,
-    .left_wrapper {
-        display: block !important;
+    .left_wrapper, 
+    .left_title,
+    .left_info {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
     }
+    .left_info_descr,
+    .progress,
+    .left_content {
+        width:100%;
+    }
     .general {
         flex-direction: column !important;
         align-items: center !important;
+    }
+    .left_block {
+        padding: 20px 20px 0px 20px;
     }
     .left_wrapper {
         order: 0;
@@ -759,9 +767,10 @@ body {
     .content {
         order: 1;
         margin-top: 20px;
-        background-position: center bottom;
+        background-position: right bottom;
     }
     .profile_wrapper {
+        width:auto !important;
         order: unset;
         margin-top: 10px;
     }
@@ -771,5 +780,13 @@ body {
         align-items: center;
         text-align: center;
         gap: 15px;
+        width:auto;
+    }
+    .education_year::before,
+    .work_year::before {
+        left: -1px;
+    }
+    .profile_title {
+        margin-bottom: 10px;
     }
 }

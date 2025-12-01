@@ -1,1 +1,33 @@
-!function(){"use strict";function e(e){let t={light:{css:"assets/css/style-white.css",logo:"assets/img/logo_dark.svg"},dark:{css:"assets/css/style.css",logo:"assets/img/logo.svg"}},s=document.getElementById("theme-style"),l=document.getElementById("logotype");s&&l&&t[e]&&(s.href=t[e].css,l.src=t[e].logo,localStorage.setItem("theme",e))}document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".circle-progress").forEach(e=>{let t=e.querySelector(".circle-fill");if(!t)return;let s=2*Math.PI*36,l=parseInt(e.dataset.percentage,10)||0,o="ccw"===e.dataset.direction?-1:1;t.style.strokeDasharray=s,t.style.strokeDashoffset=o*s,setTimeout(()=>{t.style.strokeDashoffset=o*s*(1-l/100)},50)});let t=localStorage.getItem("theme")||"dark";e(t);let s=document.getElementById("switch-theme");s&&s.addEventListener("click",()=>{e(t="light"===t?"dark":"light")})})}();
+!(function () {
+    "use strict";
+    function e(e) {
+        let t = {
+                light: { css: "assets/css/style-white.css", logo: "assets/img/logo_dark.svg" },
+                dark: { css: "assets/css/style.css", logo: "assets/img/logo.svg" },
+            },
+            s = document.getElementById("theme-style"),
+            l = document.getElementById("logotype");
+        s && l && t[e] && ((s.href = t[e].css), (l.src = t[e].logo), localStorage.setItem("theme", e));
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".circle-progress").forEach((e) => {
+            let t = e.querySelector(".circle-fill");
+            if (!t) return;
+            let s = 2 * Math.PI * 36,
+                l = parseInt(e.dataset.percentage, 10) || 0,
+                o = "ccw" === e.dataset.direction ? -1 : 1;
+            (t.style.strokeDasharray = s),
+                (t.style.strokeDashoffset = o * s),
+                setTimeout(() => {
+                    t.style.strokeDashoffset = o * s * (1 - l / 100);
+                }, 50);
+        });
+        let t = localStorage.getItem("theme") || "dark";
+        e(t);
+        let s = document.getElementById("switch-theme");
+        s &&
+            s.addEventListener("click", () => {
+                e((t = "light" === t ? "dark" : "light"));
+            });
+    });
+})();

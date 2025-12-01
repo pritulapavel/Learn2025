@@ -796,4 +796,8 @@ body {
     .profile_statistics {
         gap: 16px;
     }
+    .circle-progress {
+        width:70px;
+        height:70px;
+    }
 }

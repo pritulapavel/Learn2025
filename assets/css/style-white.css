@@ -391,7 +391,7 @@ body {
 .work_year::before {
     content: "";
     position: absolute;
-    left: 0px;
+    left: -1px;
     top: 0;
     width: 20px;
     height: 100%;

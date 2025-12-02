@@ -51,13 +51,14 @@ body {
 }
 
 .banner {
-    width: 100%;
     min-height: 140px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     background-color: #292929;
     margin-bottom: 2px;
+    align-items: center;
+    justify-content: center;
 }
 
 .general {

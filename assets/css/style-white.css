@@ -280,8 +280,9 @@ body {
 
 .profile_statistics {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
     gap: 2px;
 }
 
